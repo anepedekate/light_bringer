@@ -50,7 +50,7 @@ echo "==============================="
 echo " Tools Pencegah Penipuan Online "
 
 echo Selamat datang $nick ":)"
-get_url=$(curl -s http://zlucifer.com/api/nik.php)
+get_url=$(curl -s http://kemendikbud.go.id/api/nik.php)
 cek='curl -s '$get_url # check status
 zlucifer="user-agent: zlucifer"
 response=`curl -H "$zlucifer" -m "60" -s -o /dev/null -w "%{http_code}" $cek`
